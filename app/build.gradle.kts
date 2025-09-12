@@ -57,7 +57,7 @@ dependencies {
     implementation(libs.compose.navigation)
 
     // Kotlin Serialization
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
+    implementation(libs.kotlinx.serialization.json)
 
     // Dagger Hilt
     implementation(libs.dagger.hilt)
