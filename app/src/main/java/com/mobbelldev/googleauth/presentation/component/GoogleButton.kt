@@ -1,4 +1,4 @@
-package com.mobbelldev.googleauth.ui.component
+package com.mobbelldev.googleauth.presentation.component
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing
@@ -32,7 +32,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.mobbelldev.googleauth.R
-import com.mobbelldev.googleauth.ui.theme.LoadingBlue
+import com.mobbelldev.googleauth.presentation.theme.LoadingBlue
 
 @Composable
 fun GoogleButton(
