@@ -2,4 +2,7 @@
     <string name="app_name">GoogleAuth</string>
     <string name="google_logo">Google Logo</string>
     <string name="message_bar_icon">Message Bar Icon</string>
+    <string name="text_sign_in">Sign in</string>
+    <string name="text_sign_in_title">Sign in to Continue</string>
+    <string name="text_sign_in_subtitle">If you want to access this app,\nfirst you need to sign in</string>
 </resources>
