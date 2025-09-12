@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.dp
 import com.mobbelldev.googleauth.R
 import com.mobbelldev.googleauth.domain.model.MessageBarState
 import com.mobbelldev.googleauth.presentation.component.GoogleButton
-import com.mobbelldev.googleauth.presentation.component.Message
+import com.mobbelldev.googleauth.presentation.component.MessageBar
 import com.mobbelldev.googleauth.presentation.theme.GoogleAuthTheme
 
 @Composable
@@ -37,7 +37,7 @@ fun LoginContent(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Column(modifier = Modifier.weight(1F)) {
-            Message(messageBarState = messageBarState)
+            MessageBar(messageBarState = messageBarState)
         }
         Column(
             modifier = Modifier
