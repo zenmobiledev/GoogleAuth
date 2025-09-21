@@ -5,6 +5,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.mobbelldev.googleauth.domain.exception.GoogleAccountNotFound
 import com.mobbelldev.googleauth.domain.model.MessageBarState
 import com.mobbelldev.googleauth.domain.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -33,5 +34,9 @@ class LoginViewModel @Inject constructor(private val repository: Repository) : V
         viewModelScope.launch(context = Dispatchers.IO) {
             repository.saveSignedInState(signedIn = signedIn)
         }
+    }
+
+    fun updateMessageBarState() {
+        _messageBarState.value = MessageBarState(error = GoogleAccountNotFound())
     }
 }

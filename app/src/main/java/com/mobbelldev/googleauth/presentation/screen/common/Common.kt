@@ -2,6 +2,7 @@ package com.mobbelldev.googleauth.presentation.screen.common
 
 import android.app.Activity
 import android.util.Log
+import androidx.activity.compose.LocalActivity
 import androidx.activity.compose.ManagedActivityResultLauncher
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.ActivityResult
@@ -9,7 +10,6 @@ import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.ui.platform.LocalContext
 import com.google.android.gms.auth.api.identity.BeginSignInRequest
 import com.google.android.gms.auth.api.identity.Identity
 import com.google.android.gms.common.api.ApiException
@@ -24,7 +24,7 @@ fun StartActivityForResult(
     launcher: (ManagedActivityResultLauncher<IntentSenderRequest, ActivityResult>) -> Unit,
 ) {
     val tag = "StartActivityForResult"
-    val activity = LocalContext.current
+    val activity = LocalActivity.current as Activity
     val activityLauncher =
         rememberLauncherForActivityResult(
             contract = ActivityResultContracts.StartIntentSenderForResult()
