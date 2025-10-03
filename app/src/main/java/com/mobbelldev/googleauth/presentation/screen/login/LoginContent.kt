@@ -20,9 +20,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mobbelldev.googleauth.R
 import com.mobbelldev.googleauth.domain.model.MessageBarState
-import com.mobbelldev.googleauth.presentation.component.GoogleButton
-import com.mobbelldev.googleauth.presentation.component.MessageBar
-import com.mobbelldev.googleauth.presentation.theme.GoogleAuthTheme
+import com.mobbelldev.googleauth.component.GoogleButton
+import com.mobbelldev.googleauth.component.MessageBar
+import com.mobbelldev.googleauth.ui.theme.GoogleAuthTheme
 
 @Composable
 fun LoginContent(

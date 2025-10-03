@@ -18,8 +18,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.mobbelldev.googleauth.R
-import com.mobbelldev.googleauth.presentation.theme.topAppBarBackgroundColor
-import com.mobbelldev.googleauth.presentation.theme.topAppBarContentColor
+import com.mobbelldev.googleauth.component.DisplayAlertDialog
+import com.mobbelldev.googleauth.ui.theme.topAppBarBackgroundColor
+import com.mobbelldev.googleauth.ui.theme.topAppBarContentColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -51,8 +52,16 @@ fun ProfileTopBarActions(
     onSave: () -> Unit,
     onDeleteAllConfirmed: () -> Unit,
 ) {
+    var openDialog by remember { mutableStateOf(value = false) }
+
+    DisplayAlertDialog(
+        openDialog = openDialog,
+        onYesClicked = { onDeleteAllConfirmed() },
+        onDialogClosed = { openDialog = false }
+    )
+
     SaveAction(onSave = onSave)
-    DeleteAllAction(onDeleteAllConfirmed = onDeleteAllConfirmed)
+    DeleteAllAction(onDeleteAllConfirmed = { openDialog = true })
 }
 
 @Composable

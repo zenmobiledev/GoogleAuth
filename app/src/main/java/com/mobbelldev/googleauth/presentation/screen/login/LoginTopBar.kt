@@ -9,9 +9,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.mobbelldev.googleauth.R
-import com.mobbelldev.googleauth.presentation.theme.GoogleAuthTheme
-import com.mobbelldev.googleauth.presentation.theme.topAppBarBackgroundColor
-import com.mobbelldev.googleauth.presentation.theme.topAppBarContentColor
+import com.mobbelldev.googleauth.ui.theme.GoogleAuthTheme
+import com.mobbelldev.googleauth.ui.theme.topAppBarBackgroundColor
+import com.mobbelldev.googleauth.ui.theme.topAppBarContentColor
 import com.mobbelldev.googleauth.util.Constant.DARK_THEME
 import com.mobbelldev.googleauth.util.Constant.LIGHT_THEME
 
