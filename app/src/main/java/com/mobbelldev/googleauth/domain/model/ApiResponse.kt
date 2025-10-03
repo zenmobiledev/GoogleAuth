@@ -4,4 +4,6 @@ data class ApiResponse(
     val success: Boolean,
     val user: User? = null,
     val message: String? = null,
+    @Transient
+    val error: Exception? = null,
 )
