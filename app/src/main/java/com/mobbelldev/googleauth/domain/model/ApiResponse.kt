@@ -1,5 +1,9 @@
 package com.mobbelldev.googleauth.domain.model
 
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
+
+@Serializable
 data class ApiResponse(
     val success: Boolean,
     val user: User? = null,
