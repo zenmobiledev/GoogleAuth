@@ -5,4 +5,8 @@
     <string name="text_sign_in">Sign in</string>
     <string name="text_sign_in_title">Sign in to Continue</string>
     <string name="text_sign_in_subtitle">If you want to access this app,\nfirst you need to sign in</string>
+    <string name="text_profile">Profile</string>
+    <string name="hint_save_icon">Save Icon</string>
+    <string name="hint_delete_all_icon">Delete All Icon</string>
+    <string name="text_delete_account">Delete Account</string>
 </resources>
