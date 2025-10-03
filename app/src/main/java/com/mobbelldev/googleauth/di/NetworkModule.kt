@@ -1,6 +1,7 @@
 package com.mobbelldev.googleauth.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import com.mobbelldev.googleauth.data.remote.KtorApi
 import com.mobbelldev.googleauth.util.Constant.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -53,5 +54,11 @@ object NetworkModule {
             .client(okHttpClient)
             .addConverterFactory(Json.asConverterFactory(contentType = contentType))
             .build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideKtorApi(retrofit: Retrofit): KtorApi {
+        return retrofit.create(KtorApi::class.java)
     }
 }
