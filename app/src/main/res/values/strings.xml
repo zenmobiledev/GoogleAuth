@@ -9,4 +9,8 @@
     <string name="hint_save_icon">Save Icon</string>
     <string name="hint_delete_all_icon">Delete All Icon</string>
     <string name="text_delete_account">Delete Account</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_profile_image">Profile Image</string>
+    <string name="hint_email">Email</string>
 </resources>
