@@ -1,4 +1,4 @@
-package com.mobbelldev.googleauth.presentation.component
+package com.mobbelldev.googleauth.component
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
@@ -33,8 +33,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.mobbelldev.googleauth.R
 import com.mobbelldev.googleauth.domain.model.MessageBarState
-import com.mobbelldev.googleauth.presentation.theme.ErrorRed
-import com.mobbelldev.googleauth.presentation.theme.InfoGreen
+import com.mobbelldev.googleauth.ui.theme.ErrorRed
+import com.mobbelldev.googleauth.ui.theme.InfoGreen
 import kotlinx.coroutines.delay
 import java.net.ConnectException
 import java.net.SocketTimeoutException

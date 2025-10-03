@@ -1,4 +1,4 @@
-package com.mobbelldev.googleauth.presentation.theme
+package com.mobbelldev.googleauth.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
